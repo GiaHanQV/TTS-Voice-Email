@@ -4,9 +4,9 @@ from streamlit import audio
 from vieneu import Vieneu
 
 
-GEMINI_API_KEY = "AIzaSyAv_2JMErdxLQCfOuYjxnIwc9zo0rVxvoM"
+GEMINI_API_KEY = ""
 genai.configure(api_key=GEMINI_API_KEY)
-llm_model = genai.GenerativeModel('gemini-2.0-flash-lite')
+llm_model = genai.GenerativeModel('models/gemini-2.0-flash')
 
 print("Đang tải mô hình VieNeu-TTS...")
 tts = Vieneu()
